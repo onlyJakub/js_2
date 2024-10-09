@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pytania JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .pytanie {
+        margin-bottom: 15px;
+      }
+      .odpowiedz {
+        width: 100%;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pytania dotyczące JavaScript</h1>
+
+    <div class="pytanie">
+      <b>1) Kiedy powstał JavaScript (podaj datę)?</b><br />
+      <span class="odpowiedz">JavaScript został stworzony 4 grudnia 1995 roku.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>2) Dlaczego jest to język skryptowy?</b><br />
+      <span class="odpowiedz">JavaScript jest językiem skryptowym, ponieważ jest wykonywany bezpośrednio w środowisku, takim jak przeglądarka, bez konieczności kompilacji. Kod jest interpretowany dynamicznie podczas jego uruchamiania.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>3) Gdzie jest wykonywany JavaScript (klient lub serwer)?</b><br />
+      <span class="odpowiedz">JavaScript pierwotnie był wykonywany po stronie klienta (przeglądarki), jednak dzięki technologiom jak Node.js, może być wykonywany również po stronie serwera.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>4) Dlaczego JavaScript jest to bezpieczne narzędzie?</b><br />
+      <span class="odpowiedz">JavaScript działa w tzw. sandboxie, co oznacza, że ma ograniczony dostęp do zasobów systemu operacyjnego, dzięki czemu nie może bezpośrednio uszkodzić komputera użytkownika. Wprowadza też mechanizmy kontroli dostępu.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>5) Czy jest to język obiektowy, jeśli tak, to dlaczego?</b><br />
+      <span class="odpowiedz">ak, JavaScript jest językiem obiektowym, ponieważ pozwala na definiowanie obiektów, które mogą przechowywać właściwości i metody.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>6) Wymień zalety JavaScript:</b><br />
+      Zaleta 1: <span class="odpowiedz">Szybkość - Jest wykonywany bezpośrednio w przeglądarce bez potrzeby kompilacji.</span><br />
+      Zaleta 2: <span class="odpowiedz">Wszechstronność - Może być używany zarówno po stronie klienta, jak i serwera.</span><br />
+      Zaleta 3: <span class="odpowiedz">Interaktywność - Pozwala tworzyć dynamiczne interfejsy użytkownika.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>7) Framework to:</b><br />
+      <span class="odpowiedz">Framework to gotowa struktura programistyczna, która pomaga w tworzeniu aplikacji poprzez udostępnienie zestawu bibliotek, narzędzi i wzorców ułatwiających programowanie.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>8) Do aplikacji mobilnych można użyć Framework?</b><br />
+      <span class="odpowiedz"> Tak, frameworki takie jak React Native, Flutter czy Ionic pozwalają na tworzenie aplikacji mobilnych przy użyciu JavaScriptu lub jego wariantów.</span>
+    </div>
+
+    <div class="pytanie">
+      <b>9) Aplikacje responsywne to:</b><br />
+      <span class="odpowiedz">Aplikacje, które automatycznie dostosowują swój wygląd i układ do różnych rozmiarów ekranów, takich jak komputery, tablety i smartfony.</span>
+    </div>
+
+    <div class="pytanie">
+        <u><b>10) Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</b></u>
+        <span class="odpowiedz">&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></span>
+        <span class="odpowiedz">Kod ten tworzy przycisk, który po kliknięciu uruchamia funkcję <code>WinOpen()</code>, która otworzy nową stronę internetową (adres URL podany w cudzysłowie).</span>
+    </div>
+
+    <div class="pytanie">
+        <u><b>11) Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</b></u>
+        <span class="odpowiedz">window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</span>
+        <span class="odpowiedz">Funkcja &lsaquo;code>window.close()&lsaquo;/code> zamyka aktualnie otwarte okno przeglądarki, o ile zostało ono otwarte za pomocą JavaScript.</span>
+        
+        <br><br>
+
+        <span class="odpowiedz">toolbar=no  -  ukrywa pasek narzędzi (toolbar) w nowym oknie, który normalnie zawiera przyciski nawigacyjne (np. przyciski wstecz, dalej, odśwież).</span>
+        <span class="odpowiedz">directories=no – ukrywa przyciski katalogów w nowym oknie. W starszych wersjach przeglądarek można było zobaczyć pasek z katalogami, ale obecnie ten element jest przestarzały i często ignorowany.</span>
+        <span class="odpowiedz">menubar=no – ukrywa pasek menu (menu bar) w nowym oknie, który normalnie zawiera opcje takie jak "Plik", "Edytuj", "Widok", itp.</span>
+        <span class="odpowiedz">height=280 – ustawia wysokość nowego okna na 280 pikseli.</span>
+        <span class="odpowiedz">width=160 – ustawia szerokość nowego okna na 160 pikseli.</span>
+        <span class="odpowiedz">top=200 – ustawia pozycję okna 200 pikseli od góry ekranu.</span>
+        <span class="odpowiedz">left=200 – ustawia pozycję okna 200 pikseli od lewej strony ekranu.</span>
+    </div>
+
+    <div class="pytanie">
+        <u><b>12) Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</b></u>
+        <span class="odpowiedz">window.close();</span>
+        <span class="odpowiedz">Funkcja &lsaquo;code>window.close()&lsaquo;/code> zamyka aktualnie otwarte okno przeglądarki, o ile zostało ono otwarte za pomocą JavaScript.</span>
+    </div>
+
+  </body>
+</html>

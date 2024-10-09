@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #result {
+        color: green;
+        font-size: 52px;
+      }
+    </style>
+    <script>
+        function oblicz() {
+            var D1_wojc = document.getElementById("D1_wojc").value;
+            var D2_wojc = document.getElementById("D2_wojc").value;
+    
+            var date1 = new Date(2024, 0, D1_wojc);
+            var date2 = new Date(2024, 0, D2_wojc);
+    
+            var differenceInSeconds = Math.abs(date2 - date1) / 1000;
+    
+            document.getElementById("result").innerHTML = "Różnica czasu między dniami wynosi: " + differenceInSeconds + " sekund.";
+        }
+    </script>
+  </head>
+  <body>
+    <h2>Obliczanie różnicy czasu między dwoma dniami stycznia</h2>
+
+    <p>Podaj pierwszy dzień (D1_wojc):</p>
+    <input id="D1_wojc" type="number" min="1" max="31" />
+
+    <p>Podaj drugi dzień (D2_wojc):</p>
+    <input id="D2_wojc" type="number" min="1" max="31" />
+
+    <button onclick="oblicz()">Oblicz</button>
+
+    <p id="result"></p>
+  </body>
+</html>

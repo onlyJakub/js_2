@@ -1,1 +1,2 @@
-# js_2
+# js
+my first javascript page

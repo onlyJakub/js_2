@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function okno_zamknij_siejka() {
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>KOD HTML I javascript</h1>
+    <form>
+      <textarea name="siejka" cols="80" rows="20" readonly>
+        <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                <script>
+                    let J_woj = prompt("m=","");
+                    let b;
+                    let c;
+                    let a=parseFloat(J_woj);
+                    b=a+1;
+                    c=a*(a+1);
+                    document.write("1/"+a+" = 1/"+b+" + 1/"+c+"<br>");
+                    function okno_zamknij() {
+                    window.close();
+                    }
+                </script>
+                <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+            </body>
+            </html>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()" />
+    <script type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obliczanie wyrażenia</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: navy; 
+        text-align: center; 
+      }
+      .result {
+        font-size: 50px; 
+        width: 100%; 
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      
+      let A = parseInt(prompt("Podaj pierwszą liczbę naturalną:"));
+      let B = parseInt(prompt("Podaj drugą liczbę naturalną:"));
+
+      
+      let wynik = (A + B) ** 3;
+      let czesc1 = A ** 3;
+      let czesc2 = 3 * A ** 2 * B;
+      let czesc3 = 3 * A * B ** 2;
+      let czesc4 = B ** 3;
+      let suma = czesc1 + czesc2 + czesc3 + czesc4;
+
+      
+      document.write(`<div class="result">`);
+      document.write(`A = ${A} <br>`);
+      document.write(`B = ${B} <br><br>`);
+      document.write(
+        `(${A} + ${B})^3 = ${A}^3 + 3 * (${A}^2) * (${B}) + 3 * (${A}) * (${B}^2) + ${B}^3 = ${czesc1} + ${czesc2} + ${czesc3} + ${czesc4} = ${suma}`
+      );
+      document.write(`</div>`);
+    </script>
+  </body>
+</html>
